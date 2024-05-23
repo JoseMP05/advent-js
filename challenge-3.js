@@ -1,4 +1,4 @@
-/* 
+/*
 HOW MANY PACKS OF GIFTS CAN SANTA CARRY?
 
 You receive a Christmas gifts pack that Santa Claus wants to deliver to
@@ -17,23 +17,23 @@ the maximum number of gifts packs that Santa Claus can deliver. You
 can't split gifts packs.
 */
 
-function distributeGifts(packOfGifts, reindeers) {
-  let weightPack = 0;
-  let weightTrans = 0;
+function distributeGifts (packOfGifts, reindeers) {
+  let weightPack = 0
+  let weightTrans = 0
 
   packOfGifts.forEach((gift) => {
-    weightPack += gift.length;
-  });
+    weightPack += gift.length
+  })
 
   reindeers.forEach((reindeer) => {
-    weightTrans += reindeer.length * 2;
-  });
+    weightTrans += reindeer.length * 2
+  })
 
-  return Math.floor(weightTrans / weightPack);
+  return Math.floor(weightTrans / weightPack)
 }
 
-const packOfGifts = ["book", "doll", "ball"];
-const reindeers = ["dasher", "dancer"];
-const packsToDistribute = distributeGifts(packOfGifts, reindeers);
+const packOfGifts = ['book', 'doll', 'ball']
+const reindeers = ['dasher', 'dancer']
+const packsToDistribute = distributeGifts(packOfGifts, reindeers)
 
-console.log(packsToDistribute);
+console.log(packsToDistribute)
