@@ -1,0 +1,21 @@
+{
+  "name": "advent-js",
+  "version": "1.0.0",
+  "description": "This repo is my solution to the challenges of the [AdventJS 2022](https://adventjs.dev/), an initiative of [Midudev](https://github.com/midudev).",
+  "main": "challenge-1.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "vitest": "^1.4.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
